@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { fetchUsers } from "./services/api";
+import UserList from "./components/UserList";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -24,9 +25,7 @@ function App() {
   return (
     <>
       <h1>User Dashboard</h1>
-      {users.map((user) => (
-        <p key={user.id}>{user.name}</p>
-      ))}
+      <UserList users={users} />
     </>
   );
 }
