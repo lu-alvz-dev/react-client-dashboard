@@ -31,7 +31,7 @@ function App() {
     <>
       <h1>User Dashboard</h1>
       <SearchBar onSearch={setSearch} />
-      <UserList users={users} />
+      <UserList users={filteredUsers} />
     </>
   );
 }
