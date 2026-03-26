@@ -6,6 +6,11 @@ function App() {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState("");
+
+  const filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(search.toLowerCase()),
+  );
 
   useEffect(() => {
     fetchUsers()
@@ -25,6 +30,7 @@ function App() {
   return (
     <>
       <h1>User Dashboard</h1>
+      <SearchBar onSearch={setSearch} />
       <UserList users={users} />
     </>
   );
