@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchUsers } from "./services/api";
 import UserList from "./components/UserList";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [users, setUsers] = useState([]);
