@@ -1,4 +1,4 @@
-function userList(users) {
+function UserList({ users }) {
   return (
     <>
       {users.map((user) => (
@@ -8,4 +8,4 @@ function userList(users) {
   );
 }
 
-export default userList;
+export default UserList;
