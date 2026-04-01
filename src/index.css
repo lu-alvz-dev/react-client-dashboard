@@ -7,6 +7,7 @@ body {
 /* CONTENEDOR CENTRAL */
 .container {
   max-width: 500px;
+  width: 90%;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
