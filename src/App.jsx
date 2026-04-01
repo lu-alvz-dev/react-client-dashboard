@@ -30,9 +30,11 @@ function App() {
 
   return (
     <>
-      <h1>User Dashboard</h1>
-      <SearchBar onSearch={setSearch} />
-      <UserList users={filteredUsers} />
+      <div className="container">
+        <h1>User Dashboard</h1>
+        <SearchBar onSearch={setSearch} />
+        <UserList users={filteredUsers} />
+      </div>
     </>
   );
 }
